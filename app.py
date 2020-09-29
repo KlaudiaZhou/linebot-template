@@ -19,13 +19,13 @@ from linebot.models import (
 )
 
 app = Flask(__name__)
-channel_secret = "9b74e5a2e19a7ef8b93f1ae7415cc699"
-channel_access_token = "oJ5JiZ3p6ixcVGp5aMH50McVRFcuin6CFcDqopJ68nJrX0N+qKu1at/BHM1mUeQm7DO8On7jT9hT2ga/X+Cvo8cw4INeS+cEjsOThXD8pVjIUlFjLzLlS0lPUHnkHDkbJZuc3b1oTikIvVJWjXUqQAdB04t89/1O/w1cDnyilFU="
+channel_secret = ""
+channel_access_token = ""
 
-if channel_secret is None:
+if channel_secret == "":
     print("Please specify LINE_CHANNEL_SECRET.")
     sys.exit(1)
-if channel_access_token is None:
+if channel_access_token == "":
     print("Please specify LINE_CHANNEL_ACCESS_TOKEN.")
     sys.exit(1)
 
