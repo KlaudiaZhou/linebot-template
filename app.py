@@ -72,9 +72,6 @@ if __name__ == "__main__":
     )
     arg_parser.add_argument("-p", "--port", default=8000, help="port")
     arg_parser.add_argument("-d", "--debug", default=False, help="debug")
-    arg_parser.add_argument("-n", "--ngrok", required=True, help="ngrok")
     options = arg_parser.parse_args()
 
-    # Run
-    app.config["ngrok"] = options.ngrok 
     app.run(debug=options.debug, port=options.port)
